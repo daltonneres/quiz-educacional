@@ -82,10 +82,10 @@ Tudo fica salvo apenas no navegador — sem necessidade de servidor ou banco de 
 Dalton José Neres
 💼 Desenvolvedor Full Stack
 🌐 GitHub
-📧 dalton.neres.dev@gmail.com (exemplo, adicione o seu real se quiser)
+📧 dev.neresdalton@gmail.com
 
 ❤️ Agradecimentos
 “Desenvolvido com carinho para nossos estudantes testarem seus conhecimentos.”
 — Dalton Neres
 
-<p align="center"> © 2025 Quiz Educacional | Todos os direitos reservados. </p> ```
+<p align="center"> © 2025 Quiz Educacional | Todos os direitos reservados. </p>
