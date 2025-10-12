@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Educacional | Início</title>
+  <link rel="icon" href="img/favicon.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Quiz Educacional</h1>
+<div id="playerInfo" class="dropdown">
+  <img src="avatar.jpg" alt="Avatar" class="avatar-small" id="avatarImg">
+  <span id="playerNameHeader"></span>
+  <div class="dropdown-menu" id="playerMenu">
+    <button onclick="changeName()">🧑 Alterar nome</button>
+    <button onclick="document.getElementById('avatarUpload').click()">🖼️ Alterar imagem</button>
+    <button onclick="window.location.href='index.html'">🏠 Tela inicial</button>
+    <button onclick="logout()">🚪 Sair</button>
+  </div>
+  <input type="file" id="avatarUpload" accept="image/*" style="display: none;">
+</div>
+  </header>
+
+  <!-- Modal de Prévia do Avatar -->
+<div id="avatarPreviewModal" class="modal">
+  <div class="modal-content">
+    <h3>Prévia do novo avatar</h3>
+    <img id="avatarPreviewImg" src="" alt="Prévia do Avatar">
+    <div class="modal-buttons">
+      <button id="confirmAvatar">Confirmar</button>
+      <button id="cancelAvatar">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+  <main>
+    <div class="quizzes-container">
+      <div class="quiz-card" data-theme="geral">
+        <img src="img/geral.jpg" alt="Conhecimentos Gerais" title="Conhecimentos Gerais">
+        <h3>Conhecimentos Gerais</h3>
+        <p>Teste seu conhecimento sobre fatos do dia a dia.</p>
+        <button onclick="selectQuiz('geral')">Escolher</button>
+      </div>
+      <div class="quiz-card" data-theme="matematica">
+        <img src="img/matematica.jpg" alt="Matemática" title="Matemática">
+        <h3>Matemática</h3>
+        <p>Resolva questões de matemática dos níveis fácil ao difícil.</p>
+        <button onclick="selectQuiz('matematica')">Escolher</button>
+      </div>
+      <div class="quiz-card" data-theme="ingles">
+        <img src="img/ingles.jpg" alt="Inglês" title="Inglês">
+        <h3>Inglês</h3>
+        <p>Teste seu vocabulário e gramática da língua inglesa.</p>
+        <button onclick="selectQuiz('ingles')">Escolher</button>
+      </div>
+      <div class="quiz-card" data-theme="ciencias">
+        <img src="img/ciencias.jpg" alt="Ciências" title="Ciências">
+        <h3>Ciências</h3>
+        <p>Explore perguntas sobre biologia, física, química e meio ambiente.</p>
+        <button onclick="selectQuiz('ciencias')">Escolher</button>
+      </div>
+      <div class="quiz-card" data-theme="cultura">
+        <img src="img/cultura.jpg" alt="Cultura Geral" title="Cultura Geral">
+        <h3>Cultura Geral</h3>
+        <p>Testes de arte, história, música e cinema para desafiar sua mente.</p>
+        <button onclick="selectQuiz('cultura')">Escolher</button>
+      </div>
+    </div>
+
+    <!-- Ranking lado a lado -->
+    <section id="ranking">
+      <h2>🏆 Resultado por Tema</h2>
+      <div class="ranking-container">
+        <div class="ranking-theme" id="ranking-geral"></div>
+        <div class="ranking-theme" id="ranking-matematica"></div>
+        <div class="ranking-theme" id="ranking-ingles"></div>
+        <div class="ranking-theme" id="ranking-ciencias"></div>
+        <div class="ranking-theme" id="ranking-cultura"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Quiz Educacional. Todos os direitos reservados 📚.</p>
+    <p>Desenvolvido com carinho para nossos estudantes testarem seus conhecimentos 💙.</p>
+    <p>Desenvolvido por <strong>Dalton Neres</strong> - Desenvolvedor Full-Stack 👨🏻‍💻</p>
+  </footer>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

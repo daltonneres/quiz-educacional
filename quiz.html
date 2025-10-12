@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Educacional</title>
+  <link rel="icon" href="img/favicon.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Quiz Educacional</h1>
+<div id="playerInfo" class="dropdown">
+  <img src="avatar.jpg" alt="Avatar" class="avatar-small" id="avatarImg">
+  <span id="playerNameHeader"></span>
+  <div class="dropdown-menu" id="playerMenu">
+    <button onclick="changeName()">🧑 Alterar nome</button>
+    <button onclick="document.getElementById('avatarUpload').click()">🖼️ Alterar imagem</button>
+    <button onclick="window.location.href='index.html'">🏠 Tela inicial</button>
+    <button onclick="logout()">🚪 Sair</button>
+  </div>
+  <input type="file" id="avatarUpload" accept="image/*" style="display: none;">
+</div>
+  </header>
+
+  <!-- Modal de Prévia do Avatar -->
+<div id="avatarPreviewModal" class="modal">
+  <div class="modal-content">
+    <h3>Prévia do novo avatar</h3>
+    <img id="avatarPreviewImg" src="" alt="Prévia do Avatar">
+    <div class="modal-buttons">
+      <button id="confirmAvatar">Confirmar</button>
+      <button id="cancelAvatar">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+  <main>
+    <div class="quiz-container">
+      <div class="question">Pergunta será exibida aqui</div>
+      <div class="options"></div>
+      <div class="feedback"></div>
+      <div class="score">Pontuação: 0</div>
+      <button class="btn-next" style="display:none;">Próxima</button>
+    </div>
+  </main>
+
+<footer>
+  <p>© 2025 Quiz Educacional. Todos os direitos reservados 📚.</p>
+  <p>Desenvolvido com carinho para nossos estudantes testarem seus conhecimentos 💙.</p>
+  <p>Desenvolvido por <strong>Dalton Neres</strong> - Desenvolvedor Full-Stack 👨🏻‍💻</p>
+</footer>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

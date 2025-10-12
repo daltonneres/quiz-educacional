@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Educacional | Escolha o Nível</title>
+  <link rel="icon" href="img/favicon.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Escolha o Nível</h1>
+<div id="playerInfo" class="dropdown">
+  <img src="avatar.jpg" alt="Avatar" class="avatar-small" id="avatarImg">
+  <span id="playerNameHeader"></span>
+<div id="playerInfo" class="dropdown">
+  <img src="avatar.jpg" alt="Avatar" class="avatar-small" id="avatarImg">
+  <span id="playerNameHeader"></span>
+  <div class="dropdown-menu" id="playerMenu">
+    <button onclick="changeName()">🧑 Alterar nome</button>
+    <button onclick="document.getElementById('avatarUpload').click()">🖼️ Alterar imagem</button>
+    <button onclick="window.location.href='index.html'">🏠 Tela inicial</button>
+    <button onclick="logout()">🚪 Sair</button>
+  </div>
+  <input type="file" id="avatarUpload" accept="image/*" style="display: none;">
+</div>
+  </header>
+
+  <!-- Modal de Prévia do Avatar -->
+<div id="avatarPreviewModal" class="modal">
+  <div class="modal-content">
+    <h3>Prévia do novo avatar</h3>
+    <img id="avatarPreviewImg" src="" alt="Prévia do Avatar">
+    <div class="modal-buttons">
+      <button id="confirmAvatar">Confirmar</button>
+      <button id="cancelAvatar">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+  <main>
+    <div class="level-container">
+      <h2>Selecione a dificuldade:</h2>
+      <div class="level-buttons">
+        <button onclick="selectLevel('easy')">Fácil</button>
+        <button onclick="selectLevel('medium')">Médio</button>
+        <button onclick="selectLevel('hard')">Difícil</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Quiz Educacional. Todos os direitos reservados 📚.</p>
+    <p>Desenvolvido com carinho para nossos estudantes testarem seus conhecimentos 💙.</p>
+    <p>Desenvolvido por <strong>Dalton Neres</strong> - Desenvolvedor Full-Stack 👨🏻‍💻</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
