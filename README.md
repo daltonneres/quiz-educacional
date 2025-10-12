@@ -81,7 +81,6 @@ Tudo fica salvo apenas no navegador — sem necessidade de servidor ou banco de 
 👨‍💻 Desenvolvedor
 Dalton José Neres
 💼 Desenvolvedor Full Stack
-🌐 GitHub
 📧 dev.neresdalton@gmail.com
 
 ❤️ Agradecimentos
