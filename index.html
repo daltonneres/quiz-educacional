@@ -17,6 +17,8 @@
     <button onclick="changeName()">🧑 Alterar nome</button>
     <button onclick="document.getElementById('avatarUpload').click()">🖼️ Alterar imagem</button>
     <button onclick="window.location.href='index.html'">🏠 Tela inicial</button>
+    <button onclick="window.open('https://wa.me/5546999711937', '_blank')">💬 Suporte</button>
+    <button onclick="showAddQuizForm()">➕ Adicionar Quiz</button>
     <button onclick="logout()">🚪 Sair</button>
   </div>
   <input type="file" id="avatarUpload" accept="image/*" style="display: none;">
@@ -35,52 +37,163 @@
   </div>
 </div>
 
-  <main>
-    <div class="quizzes-container">
-      <div class="quiz-card" data-theme="geral">
-        <img src="img/geral.jpg" alt="Conhecimentos Gerais" title="Conhecimentos Gerais">
-        <h3>Conhecimentos Gerais</h3>
-        <p>Teste seu conhecimento sobre fatos do dia a dia.</p>
-        <button onclick="selectQuiz('geral')">Escolher</button>
-      </div>
-      <div class="quiz-card" data-theme="matematica">
-        <img src="img/matematica.jpg" alt="Matemática" title="Matemática">
-        <h3>Matemática</h3>
-        <p>Resolva questões de matemática dos níveis fácil ao difícil.</p>
-        <button onclick="selectQuiz('matematica')">Escolher</button>
-      </div>
-      <div class="quiz-card" data-theme="ingles">
-        <img src="img/ingles.jpg" alt="Inglês" title="Inglês">
-        <h3>Inglês</h3>
-        <p>Teste seu vocabulário e gramática da língua inglesa.</p>
-        <button onclick="selectQuiz('ingles')">Escolher</button>
-      </div>
-      <div class="quiz-card" data-theme="ciencias">
-        <img src="img/ciencias.jpg" alt="Ciências" title="Ciências">
-        <h3>Ciências</h3>
-        <p>Explore perguntas sobre biologia, física, química e meio ambiente.</p>
-        <button onclick="selectQuiz('ciencias')">Escolher</button>
-      </div>
-      <div class="quiz-card" data-theme="cultura">
-        <img src="img/cultura.jpg" alt="Cultura Geral" title="Cultura Geral">
-        <h3>Cultura Geral</h3>
-        <p>Testes de arte, história, música e cinema para desafiar sua mente.</p>
-        <button onclick="selectQuiz('cultura')">Escolher</button>
-      </div>
+<!-- Modal do Formulário de Adicionar Quiz -->
+<div id="addQuizModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <h3>Adicionar Novo Quiz</h3>
+    <label for="quizName">Nome do Solicitante:</label>
+    <input type="text" id="quizName" placeholder="Ex: Dalton Neres">
+    <label for="quizTheme">Tema do Quiz:</label>
+    <input type="text" id="quizTheme" placeholder="Ex: matematica">
+    <div class="modal-buttons">
+      <button onclick="sendQuizToWhatsApp()">Enviar</button>
+      <button onclick="closeAddQuizForm()">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Mostrar o modal
+  function showAddQuizForm() {
+    document.getElementById("addQuizModal").style.display = "flex";
+  }
+
+  // Fechar o modal
+  function closeAddQuizForm() {
+    document.getElementById("addQuizModal").style.display = "none";
+    document.getElementById("quizName").value = "";
+    document.getElementById("quizTheme").value = "";
+  }
+
+  // Enviar mensagem para WhatsApp
+  function sendQuizToWhatsApp() {
+    const name = document.getElementById("quizName").value.trim();
+    const theme = document.getElementById("quizTheme").value.trim();
+
+    if (!name || !theme) {
+      alert("Por favor, preencha todos os campos.");
+      return;
+    }
+
+    const message = `Novo Quiz Adicionado:\nNome: ${name}\nTema: ${theme}`;
+    const whatsappURL = `https://wa.me/5546999711937?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappURL, "_blank");
+    closeAddQuizForm();
+  }
+
+  // Fecha modal ao clicar fora
+  window.addEventListener("click", e => {
+    const modal = document.getElementById("addQuizModal");
+    if (e.target === modal) modal.style.display = "none";
+  });
+</script>
+
+<main>
+  <div class="quizzes-container">
+    <div class="quiz-card" data-theme="geral">
+      <img src="img/geral.jpg" alt="Conhecimentos Gerais" title="Conhecimentos Gerais">
+      <h3>Conhecimentos Gerais</h3>
+      <p>Teste seu conhecimento sobre fatos do dia a dia.</p>
+      <button onclick="selectQuiz('geral')">Escolher</button>
     </div>
 
-    <!-- Ranking lado a lado -->
-    <section id="ranking">
-      <h2>🏆 Resultado por Tema</h2>
-      <div class="ranking-container">
-        <div class="ranking-theme" id="ranking-geral"></div>
-        <div class="ranking-theme" id="ranking-matematica"></div>
-        <div class="ranking-theme" id="ranking-ingles"></div>
-        <div class="ranking-theme" id="ranking-ciencias"></div>
-        <div class="ranking-theme" id="ranking-cultura"></div>
-      </div>
-    </section>
-  </main>
+    <div class="quiz-card" data-theme="matematica">
+      <img src="img/matematica.jpg" alt="Matemática" title="Matemática">
+      <h3>Matemática</h3>
+      <p>Resolva questões de matemática dos níveis fácil ao difícil.</p>
+      <button onclick="selectQuiz('matematica')">Escolher</button>
+    </div>
+
+    <div class="quiz-card" data-theme="ingles">
+      <img src="img/ingles.jpg" alt="Inglês" title="Inglês">
+      <h3>Inglês</h3>
+      <p>Teste seu vocabulário e gramática da língua inglesa.</p>
+      <button onclick="selectQuiz('ingles')">Escolher</button>
+    </div>
+
+    <div class="quiz-card" data-theme="ciencias">
+      <img src="img/ciencias.jpg" alt="Ciências" title="Ciências">
+      <h3>Ciências</h3>
+      <p>Explore perguntas sobre biologia, física, química e meio ambiente.</p>
+      <button onclick="selectQuiz('ciencias')">Escolher</button>
+    </div>
+
+    <div class="quiz-card" data-theme="cultura">
+      <img src="img/cultura.jpg" alt="Cultura Geral" title="Cultura Geral">
+      <h3>Cultura Geral</h3>
+      <p>Testes de arte, história, música e cinema para desafiar sua mente.</p>
+      <button onclick="selectQuiz('cultura')">Escolher</button>
+    </div>
+
+    <div class="quiz-card" data-theme="esportes">
+      <img src="img/esportes.jpg" alt="Esportes" title="Esportes">
+      <h3>Esportes</h3>
+      <p>Regras, história, recordes, atletas famosos e eventos esportivos.</p>
+      <button onclick="selectQuiz('esportes')">Escolher</button>
+    </div>
+
+    <div class="quiz-card" data-theme="tecnologia">
+      <img src="img/tecnologia.jpg" alt="Tecnologia e Inovação" title="Tecnologia e Inovação">
+      <h3>Tecnologia e Inovação</h3>
+      <p>Perguntas sobre história da computação, redes sociais, inteligência artificial.</p>
+      <button onclick="selectQuiz('tecnologia')">Escolher</button>
+    </div>
+
+    <div class="quiz-card" data-theme="historia">
+      <img src="img/historia.jpg" alt="História" title="História">
+      <h3>História</h3>
+      <p>Focando em períodos, civilizações, guerras e figuras históricas, se diferenciando da "Cultura" que pode ser mais ampla.</p>
+      <button onclick="selectQuiz('historia')">Escolher</button>
+    </div>
+
+    <div class="quiz-card" data-theme="saude">
+      <img src="img/saude.jpg" alt="Saúde e Bem-Estar" title="Saúde e Bem-Estar">
+      <h3>Saúde e Bem-Estar</h3>
+      <p>Perguntas sobre nutrição, corpo humano, primeiros socorros, anatomia básica e hábitos saudáveis.</p>
+      <button onclick="selectQuiz('saude')">Escolher</button>
+    </div>
+
+    <div class="quiz-card" data-theme="portugues">
+      <img src="img/portugues.jpg" alt="Língua Portuguesa" title="Língua Portuguesa">
+      <h3>Língua Portuguesa</h3>
+      <p>Ortografia, concordância, regência, figuras de linguagem e interpretação de texto.</p>
+      <button onclick="selectQuiz('portugues')">Escolher</button>
+    </div>
+
+    <div class="quiz-card" data-theme="jogos">
+      <img src="img/jogos.jpg" alt="Jogos, Animes e Cultura Pop" title="Jogos, Animes e Cultura Pop">
+      <h3>Jogos, Animes e Cultura Pop</h3>
+      <p>De video games clássicos a animes atuais e tendências da internet: teste sua cultura digital.</p>
+      <button onclick="selectQuiz('jogos_animes')">Escolher</button>
+    </div>
+
+    <div class="quiz-card" data-theme="gastronomia">
+      <img src="img/comida.jpg" alt="Gastronomia" title="Gastronomia">
+      <h3>Gastronomia</h3>
+      <p>Perguntas sobre culinárias regionais e internacionais, ingredientes, técnicas de cozinha e pratos típicos.</p>
+      <button onclick="selectQuiz('gastronomia')">Escolher</button>
+    </div>
+  </div>
+
+  <section id="ranking">
+    <h2>🏆 Resultado por Tema</h2>
+    <div class="ranking-container">
+      <div class="ranking-theme" id="ranking-geral"></div>
+      <div class="ranking-theme" id="ranking-matematica"></div>
+      <div class="ranking-theme" id="ranking-ingles"></div>
+      <div class="ranking-theme" id="ranking-ciencias"></div>
+      <div class="ranking-theme" id="ranking-cultura"></div>
+      <div class="ranking-theme" id="ranking-esportes"></div>
+      <div class="ranking-theme" id="ranking-tecnologia"></div>
+      <div class="ranking-theme" id="ranking-historia"></div>
+      <div class="ranking-theme" id="ranking-saude"></div>
+      <div class="ranking-theme" id="ranking-portugues"></div>
+      <div class="ranking-theme" id="ranking-jogos"></div>
+      <div class="ranking-theme" id="ranking-gastronomia"></div>
+    </div>
+  </section>
+</main>
 
   <footer>
     <p>© 2025 Quiz Educacional. Todos os direitos reservados 📚.</p>

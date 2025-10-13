@@ -17,6 +17,8 @@
     <button onclick="changeName()">🧑 Alterar nome</button>
     <button onclick="document.getElementById('avatarUpload').click()">🖼️ Alterar imagem</button>
     <button onclick="window.location.href='index.html'">🏠 Tela inicial</button>
+    <button onclick="window.open('https://wa.me/5546999711937', '_blank')">💬 Suporte</button>
+    <button onclick="showAddQuizForm()">➕ Adicionar Quiz</button>
     <button onclick="logout()">🚪 Sair</button>
   </div>
   <input type="file" id="avatarUpload" accept="image/*" style="display: none;">
@@ -34,6 +36,58 @@
     </div>
   </div>
 </div>
+
+<!-- Modal do Formulário de Adicionar Quiz -->
+<div id="addQuizModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <h3>Adicionar Novo Quiz</h3>
+    <label for="quizName">Nome do Quiz:</label>
+    <input type="text" id="quizName" placeholder="Ex: Matemática Avançada">
+    <label for="quizTheme">Tema:</label>
+    <input type="text" id="quizTheme" placeholder="Ex: matematica">
+    <div class="modal-buttons">
+      <button onclick="sendQuizToWhatsApp()">Enviar</button>
+      <button onclick="closeAddQuizForm()">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Mostrar o modal
+  function showAddQuizForm() {
+    document.getElementById("addQuizModal").style.display = "flex";
+  }
+
+  // Fechar o modal
+  function closeAddQuizForm() {
+    document.getElementById("addQuizModal").style.display = "none";
+    document.getElementById("quizName").value = "";
+    document.getElementById("quizTheme").value = "";
+  }
+
+  // Enviar mensagem para WhatsApp
+  function sendQuizToWhatsApp() {
+    const name = document.getElementById("quizName").value.trim();
+    const theme = document.getElementById("quizTheme").value.trim();
+
+    if (!name || !theme) {
+      alert("Por favor, preencha todos os campos.");
+      return;
+    }
+
+    const message = `Novo Quiz Adicionado:\nNome: ${name}\nTema: ${theme}`;
+    const whatsappURL = `https://wa.me/5546999711937?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappURL, "_blank");
+    closeAddQuizForm();
+  }
+
+  // Fecha modal ao clicar fora
+  window.addEventListener("click", e => {
+    const modal = document.getElementById("addQuizModal");
+    if (e.target === modal) modal.style.display = "none";
+  });
+</script>
 
   <main>
     <div class="level-container">

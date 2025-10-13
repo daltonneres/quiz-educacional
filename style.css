@@ -58,7 +58,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   transition: transform 0.2s;
-  height: 280px;
+  min-height: 320px;
 }
 .quiz-card:hover {
   transform: translateY(-5px);

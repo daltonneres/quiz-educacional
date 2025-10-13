@@ -25,8 +25,8 @@ function selectLevel(level) {
 
 // --- Atualiza o ranking na tela inicial ---
 function updateRanking() {
-  const themes = ["geral", "matematica", "ingles", "ciencias", "cultura"];
-  const playerName = localStorage.getItem("playerName") || "Jogador";
+const themes = ["geral", "matematica", "ingles", "ciencias", "cultura", "esportes", "tecnologia", "portugues", "historia", "saude", "gastronomia", "jogos"];
+const playerName = localStorage.getItem("playerName") || "Jogador";
 
   themes.forEach(theme => {
     const rankingElement = document.getElementById(`ranking-${theme}`);
@@ -44,6 +44,15 @@ function updateRanking() {
 
 window.onload = updateRanking;
 
+// --- Função para embaralhar um array ---
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
 // --- Código do quiz ---
 if (document.querySelector(".quiz-container")) {
   let currentQuestion = 0;
@@ -52,6 +61,9 @@ if (document.querySelector(".quiz-container")) {
   const selectedTheme = localStorage.getItem("selectedTheme");
   const selectedLevel = localStorage.getItem("selectedLevel");
   let quizQuestions = questions[selectedTheme]?.[selectedLevel] || [];
+
+  // Embaralhar perguntas
+  quizQuestions = shuffleArray(quizQuestions);
 
   const questionEl = document.querySelector(".question");
   const optionsEl = document.querySelector(".options");
@@ -71,7 +83,9 @@ if (document.querySelector(".quiz-container")) {
     feedbackEl.textContent = "";
     nextBtn.style.display = "none";
 
-    q.options.forEach(option => {
+    // Embaralhar opções
+    const shuffledOptions = shuffleArray([...q.options]);
+    shuffledOptions.forEach(option => {
       const btn = document.createElement("button");
       btn.textContent = option;
       btn.onclick = () => checkAnswer(option);
@@ -158,7 +172,7 @@ if (avatarInput && avatarImg) {
       reader.onload = () => {
         tempImageData = reader.result;
         previewImg.src = tempImageData;
-        modal.style.display = "flex"; // abre o modal
+        modal.style.display = "flex";
       };
       reader.readAsDataURL(file);
     }
@@ -180,12 +194,11 @@ if (confirmBtn) {
 if (cancelBtn) {
   cancelBtn.addEventListener("click", () => {
     modal.style.display = "none";
-    avatarInput.value = ""; // limpa o input
+    avatarInput.value = "";
     tempImageData = null;
   });
 }
 
-// Fecha o modal ao clicar fora
 window.addEventListener("click", e => {
   if (e.target === modal) {
     modal.style.display = "none";
