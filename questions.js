@@ -385,19 +385,40 @@ historia: {
 },
 saude: {
   easy: [
-    {question: "Qual vitamina é produzida pelo sol?", options: ["Vitamina D","Vitamina A","Vitamina C","Vitamina B12"], answer: "Vitamina D"},
-    {question: "Quantos ossos tem o corpo humano adulto?", options: ["206","208","201","210"], answer: "206"},
-    {question: "Qual órgão bombeia sangue pelo corpo?", options: ["Coração","Fígado","Rim","Pulmão"], answer: "Coração"}
+    {question: "Qual vitamina é conhecida por ajudar na visão?", options: ["Vitamina A","Vitamina C","Vitamina D","Vitamina B12"], answer: "Vitamina A"},
+    {question: "Quantos dentes adultos uma pessoa normalmente possui?", options: ["32","28","30","34"], answer: "32"},
+    {question: "Qual órgão filtra o sangue no corpo humano?", options: ["Rim","Fígado","Coração","Pulmão"], answer: "Rim"},
+    {question: "Qual é a principal função do coração?", options: ["Bombear sangue","Produzir hormônios","Filtrar toxinas","Controlar a respiração"], answer: "Bombear sangue"},
+    {question: "Qual é o principal nutriente presente no leite?", options: ["Cálcio","Ferro","Vitamina C","Potássio"], answer: "Cálcio"},
+    {question: "Qual prática ajuda a prevenir gripes e resfriados?", options: ["Lavar as mãos","Dormir pouco","Evitar frutas","Não beber água"], answer: "Lavar as mãos"},
+    {question: "O que significa IMC?", options: ["Índice de Massa Corporal","Índice de Medida Corporal","Índice de Metabolismo Calórico","Índice de Massa Celular"], answer: "Índice de Massa Corporal"},
+    {question: "Qual é a bebida mais indicada para manter o corpo hidratado?", options: ["Água","Refrigerante","Suco artificial","Café"], answer: "Água"},
+    {question: "O que ajuda na formação de ossos e dentes?", options: ["Cálcio","Ferro","Vitamina B12","Zinco"], answer: "Cálcio"},
+    {question: "Qual é a doença causada pela falta de vitamina C?", options: ["Escorbuto","Raquitismo","Anemia","Diabetes"], answer: "Escorbuto"}
   ],
   medium: [
-    {question: "Qual é a função dos glóbulos brancos?", options: ["Defesa do corpo","Transporte de oxigênio","Produção de hormônios","Filtragem do sangue"], answer: "Defesa do corpo"},
-    {question: "O que é hipertensão?", options: ["Pressão alta","Pressão baixa","Baixa glicose","Falta de vitaminas"], answer: "Pressão alta"},
-    {question: "Qual nutriente é essencial para ossos fortes?", options: ["Cálcio","Ferro","Potássio","Magnésio"], answer: "Cálcio"}
+    {question: "Qual é a principal função do fígado?", options: ["Desintoxicar o sangue","Bombear sangue","Filtrar ar","Produzir insulina"], answer: "Desintoxicar o sangue"},
+    {question: "Qual hormônio é responsável pelo controle do açúcar no sangue?", options: ["Insulina","Adrenalina","Testosterona","Tiroxina"], answer: "Insulina"},
+    {question: "O que é hipertensão?", options: ["Pressão alta","Baixa pressão","Batimentos irregulares","Colesterol elevado"], answer: "Pressão alta"},
+    {question: "Qual exame avalia a densidade óssea?", options: ["Densitometria óssea","Ressonância","Tomografia","Ultrassom"], answer: "Densitometria óssea"},
+    {question: "Qual vitamina é produzida pelo corpo quando há exposição ao sol?", options: ["Vitamina D","Vitamina A","Vitamina C","Vitamina K"], answer: "Vitamina D"},
+    {question: "O que significa a sigla AIDS?", options: ["Síndrome da Imunodeficiência Adquirida","Doença Imunológica Avançada","Infecção Aguda de Sangue","Síndrome Autoimune"], answer: "Síndrome da Imunodeficiência Adquirida"},
+    {question: "Qual exame detecta a presença de células cancerígenas no colo do útero?", options: ["Papanicolau","Mamografia","Endoscopia","Colonoscopia"], answer: "Papanicolau"},
+    {question: "Qual nutriente é essencial para a coagulação sanguínea?", options: ["Vitamina K","Vitamina C","Cálcio","Ferro"], answer: "Vitamina K"},
+    {question: "Qual órgão é afetado pelo glaucoma?", options: ["Olhos","Ouvidos","Rins","Fígado"], answer: "Olhos"},
+    {question: "Qual é a doença crônica causada pelo excesso de açúcar no sangue?", options: ["Diabetes","Hipotireoidismo","Hipertensão","Anemia"], answer: "Diabetes"}
   ],
   hard: [
-    {question: "Qual é a principal função do fígado?", options: ["Desintoxicação do corpo","Produção de insulina","Filtrar oxigênio","Bombeamento de sangue"], answer: "Desintoxicação do corpo"},
-    {question: "Qual é a doença causada pela falta de vitamina C?", options: ["Escorbuto","Anemia","Diabetes","Osteoporose"], answer: "Escorbuto"},
-    {question: "O que é homeostase?", options: ["Equilíbrio interno do corpo","Crescimento muscular","Processo de digestão","Contração cardíaca"], answer: "Equilíbrio interno do corpo"}
+    {question: "Qual é a função do hipotálamo?", options: ["Regular temperatura e fome","Filtrar sangue","Bombear sangue","Produzir bile"], answer: "Regular temperatura e fome"},
+    {question: "O que é a doença de Parkinson?", options: ["Distúrbio neurológico","Doença cardíaca","Infecção pulmonar","Problema digestivo"], answer: "Distúrbio neurológico"},
+    {question: "Qual a principal célula responsável pelo transporte de oxigênio no sangue?", options: ["Hemácia","Leucócito","Plaqueta","Neurônio"], answer: "Hemácia"},
+    {question: "Qual exame mede a função renal?", options: ["Creatinina","Hemograma","Colesterol","Ultrassom abdominal"], answer: "Creatinina"},
+    {question: "O que causa a anemia ferropriva?", options: ["Falta de ferro","Excesso de cálcio","Deficiência de vitamina D","Excesso de açúcar"], answer: "Falta de ferro"},
+    {question: "Qual é a função da insulina no organismo?", options: ["Reduzir glicose no sangue","Aumentar pressão arterial","Produzir energia","Estimular o sono"], answer: "Reduzir glicose no sangue"},
+    {question: "Qual é a doença autoimune que ataca a tiróide?", options: ["Hashimoto","Diabetes tipo 1","Esclerose múltipla","Lúpus"], answer: "Hashimoto"},
+    {question: "O que é osteoporose?", options: ["Perda de densidade óssea","Inflamação articular","Doença muscular","Doença cardiovascular"], answer: "Perda de densidade óssea"},
+    {question: "Qual vírus causa a hepatite B?", options: ["HBV","HCV","HIV","HPV"], answer: "HBV"},
+    {question: "Qual exame avalia a saúde do coração por meio da atividade elétrica?", options: ["Eletrocardiograma","Ressonância","Ultrassom","Tomografia"], answer: "Eletrocardiograma"}
   ]
 },
 gastronomia: {
