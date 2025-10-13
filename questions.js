@@ -37,7 +37,6 @@ const questions = {
       {question: "Qual é o elemento químico com número atômico 79?", options: ["Ouro","Prata","Platina","Cobre"], answer: "Ouro"}
     ]
   },
-
   matematica: {
     easy: [
       {question: "Quanto é 5 + 3?", options: ["7","8","9","6"], answer: "8"},
@@ -423,36 +422,116 @@ saude: {
 },
 gastronomia: {
   easy: [
-    {question: "Qual é o ingrediente principal do pão?", options: ["Farinha","Arroz","Milho","Batata"], answer: "Farinha"},
-    {question: "Qual fruta é usada no guacamole?", options: ["Abacate","Tomate","Maçã","Banana"], answer: "Abacate"},
-    {question: "O sushi é típico de qual país?", options: ["Japão","China","Coreia","Tailândia"], answer: "Japão"}
+    {question: "Qual é o principal ingrediente do pão?", options: ["Farinha","Ovo","Leite","Açúcar"], answer: "Farinha"},
+    {question: "De qual país é o prato 'sushi'?", options: ["Japão","China","Itália","Brasil"], answer: "Japão"},
+    {question: "Qual é a fruta que faz o vinho?", options: ["Uva","Maçã","Morango","Banana"], answer: "Uva"},
+    {question: "Qual é o ingrediente principal do chocolate?", options: ["Cacau","Café","Baunilha","Leite"], answer: "Cacau"},
+    {question: "Qual carne é usada para fazer bacon?", options: ["Porco","Boi","Frango","Peixe"], answer: "Porco"},
+    {question: "Qual é o principal ingrediente da pizza?", options: ["Massa e queijo","Arroz","Batata","Carne"], answer: "Massa e queijo"},
+    {question: "Qual bebida é feita de grãos torrados e moídos?", options: ["Café","Chá","Suco","Refrigerante"], answer: "Café"},
+    {question: "Qual é o nome da comida rápida americana mais famosa?", options: ["Hambúrguer","Taco","Sopa","Salada"], answer: "Hambúrguer"},
+    {question: "Qual o vegetal usado para fazer batata frita?", options: ["Batata","Cenoura","Tomate","Cebola"], answer: "Batata"},
+    {question: "Qual é o ingrediente base da culinária italiana?", options: ["Macarrão","Arroz","Feijão","Milho"], answer: "Macarrão"}
   ],
   medium: [
-    {question: "Qual tipo de massa é usada no spaghetti?", options: ["Trigo","Arroz","Milho","Aveia"], answer: "Trigo"},
-    {question: "O que é fondue?", options: ["Prato com queijo ou chocolate derretido","Prato com arroz","Sopa francesa","Torta doce"], answer: "Prato com queijo ou chocolate derretido"},
-    {question: "Qual é o principal ingrediente do hummus?", options: ["Grão-de-bico","Lentilha","Feijão","Ervilha"], answer: "Grão-de-bico"}
+    {question: "Qual é o queijo mais usado na pizza Margherita?", options: ["Mussarela","Parmesão","Cheddar","Provolone"], answer: "Mussarela"},
+    {question: "O que é a 'mise en place' na culinária?", options: ["Preparação e organização dos ingredientes","Técnica de corte","Método de cozimento","Decoração do prato"], answer: "Preparação e organização dos ingredientes"},
+    {question: "Qual é o ingrediente chave do guacamole?", options: ["Abacate","Tomate","Cebola","Pimenta"], answer: "Abacate"},
+    {question: "Qual país criou o croissant?", options: ["Áustria","França","Itália","Suíça"], answer: "Áustria"},
+    {question: "Qual é a base do molho bechamel?", options: ["Leite e roux (manteiga e farinha)","Tomate e azeite","Creme de leite","Caldo de carne"], answer: "Leite e roux (manteiga e farinha)"},
+    {question: "O que é um 'emulsionante' na cozinha?", options: ["Substância que ajuda a misturar líquidos imiscíveis","Temperos","Tipo de faca","Método de fermentação"], answer: "Substância que ajuda a misturar líquidos imiscíveis"},
+    {question: "Qual é o ingrediente essencial para fazer pão levedado?", options: ["Fermento biológico","Açúcar","Sal","Ovo"], answer: "Fermento biológico"},
+    {question: "Qual a diferença entre azeite virgem e extra virgem?", options: ["Extra virgem tem acidez menor","Virgem tem acidez menor","Não há diferença","Extra virgem é refinado"], answer: "Extra virgem tem acidez menor"},
+    {question: "Qual o nome do método de cozimento lento e úmido?", options: ["Braise","Fritura","Grelhar","Assar"], answer: "Braise"},
+    {question: "Qual a origem do Tiramisu?", options: ["Itália","França","Portugal","Espanha"], answer: "Itália"}
   ],
   hard: [
-    {question: "Qual é a diferença entre confit e sous-vide?", options: ["Método de cozimento","Tipo de tempero","Ingrediente principal","Forma de apresentação"], answer: "Método de cozimento"},
-    {question: "O que é um roux na culinária francesa?", options: ["Base de farinha e manteiga para molhos","Tipo de queijo","Corte de carne","Prato doce"], answer: "Base de farinha e manteiga para molhos"},
-    {question: "Qual país é famoso pelo prato paella?", options: ["Espanha","Itália","França","Portugal"], answer: "Espanha"}
+    {question: "Qual é o molho base do prato 'Carbonara' tradicional?", options: ["Ovo, queijo pecorino, pimenta e guanciale","Creme de leite e bacon","Tomate e carne moída","Azeite e alho"], answer: "Ovo, queijo pecorino, pimenta e guanciale"},
+    {question: "Qual o nome do processo de cozimento de alimentos em seu próprio vapor?", options: ["Poaching","Sautéeing","Braising","Steaming"], answer: "Steaming"},
+    {question: "O que é o 'Umami'?", options: ["Quinto gosto fundamental","Tipo de especiaria","Método de preparo","Molho japonês"], answer: "Quinto gosto fundamental"},
+    {question: "Qual o princípio ativo que causa a picância da pimenta?", options: ["Capsaicina","Curcumina","Piperina","Alicina"], answer: "Capsaicina"},
+    {question: "Qual é o país de origem do 'ceviche'?", options: ["Peru","México","Brasil","Chile"], answer: "Peru"},
+    {question: "O que é um 'Rouille'?", options: ["Molho provençal à base de alho, azeite, pimenta e pão","Vinho francês","Queijo suíço","Prato de carne"], answer: "Molho provençal à base de alho, azeite, pimenta e pão"},
+    {question: "Qual a temperatura ideal para a fermentação de pães (média)?", options: ["25°C a 30°C","10°C a 15°C","40°C a 45°C","5°C a 10°C"], answer: "25°C a 30°C"},
+    {question: "O que é a caramelização?", options: ["Reação química do açúcar sob aquecimento","Reação de proteínas","Processo de fermentação","Mistura de gordura e água"], answer: "Reação química do açúcar sob aquecimento"},
+    {question: "Qual o país de origem do queijo 'Feta'?", options: ["Grécia","Itália","França","Suíça"], answer: "Grécia"},
+    {question: "Qual é o principal componente do 'Miso' japonês?", options: ["Soja fermentada","Arroz e peixe","Gergelim e algas","Caldo de carne"], answer: "Soja fermentada"}
   ]
 },
 jogos: {
   easy: [
-    {question: "Qual é o tabuleiro do xadrez?", options: ["8x8","10x10","6x6","12x12"], answer: "8x8"},
-    {question: "Qual personagem é o mascote da Nintendo?", options: ["Mario","Sonic","Pikachu","Link"], answer: "Mario"},
-    {question: "Quantos dados são usados no jogo de Monopoly?", options: ["2","1","3","4"], answer: "2"}
+    {question: "Qual é o encanador famoso da Nintendo?", options: ["Mario","Luigi","Sonic","Link"], answer: "Mario"},
+    {question: "Qual jogo tem o personagem 'Pikachu'?", options: ["Pokémon","Digimon","Zelda","Final Fantasy"], answer: "Pokémon"},
+    {question: "Qual console é feito pela Microsoft?", options: ["Xbox","PlayStation","Nintendo Switch","Wii"], answer: "Xbox"},
+    {question: "Qual é a espada lendária de Link em Zelda?", options: ["Master Sword","Excalibur","Buster Sword","Keyblade"], answer: "Master Sword"},
+    {question: "Qual o jogo de construção com blocos mais popular?", options: ["Minecraft","Terraria","Roblox","Fortnite"], answer: "Minecraft"},
+    {question: "Qual é o nome do principal rival de Sonic?", options: ["Dr. Eggman","Tails","Knuckles","Shadow"], answer: "Dr. Eggman"},
+    {question: "Qual a cor do Pac-Man?", options: ["Amarelo","Vermelho","Azul","Verde"], answer: "Amarelo"},
+    {question: "Qual jogo é conhecido pelo 'battle royale'?", options: ["Fortnite","The Sims","League of Legends","Angry Birds"], answer: "Fortnite"},
+    {question: "Qual o nome do herói de 'God of War'?", options: ["Kratos","Zeus","Ares","Hercules"], answer: "Kratos"},
+    {question: "Qual o console mais vendido de todos os tempos?", options: ["PlayStation 2","Nintendo DS","PlayStation 4","Xbox 360"], answer: "PlayStation 2"}
   ],
   medium: [
-    {question: "Em que ano foi lançado o primeiro videogame?", options: ["1972","1980","1965","1978"], answer: "1972"},
-    {question: "Qual é o objetivo do jogo League of Legends?", options: ["Destruir a base inimiga","Colecionar cartas","Marcar gols","Montar palavras"], answer: "Destruir a base inimiga"},
-    {question: "Qual é o tabuleiro do jogo War?", options: ["Mapa-múndi","Tabuleiro de cidades","Tabuleiro de animais","Tabuleiro de números"], answer: "Mapa-múndi"}
+    {question: "Qual é a empresa criadora de 'Grand Theft Auto' (GTA)?", options: ["Rockstar Games","Ubisoft","EA Games","Activision"], answer: "Rockstar Games"},
+    {question: "Qual jogo popularizou o gênero 'MOBA'?", options: ["League of Legends","Dota 2","StarCraft","World of Warcraft"], answer: "League of Legends"},
+    {question: "Qual o nome do protagonista de 'Metal Gear Solid'?", options: ["Solid Snake","Naked Snake","Big Boss","Raiden"], answer: "Solid Snake"},
+    {question: "Qual a primeira consola a usar cartuchos de jogo?", options: ["Magnavox Odyssey","Atari 2600","Nintendo Entertainment System (NES)","Sega Master System"], answer: "Magnavox Odyssey"},
+    {question: "Em qual cidade fictícia se passa a maior parte de 'Cyberpunk 2077'?", options: ["Night City","Los Santos","Raccoon City","Midgar"], answer: "Night City"},
+    {question: "Qual é o nome do monstro final em 'Space Invaders'?", options: ["UFO","Boss","Alien","King"], answer: "UFO"},
+    {question: "Qual é a principal moeda de troca em 'Minecraft'?", options: ["Esmeralda","Ouro","Diamante","Ferro"], answer: "Esmeralda"},
+    {question: "Qual personagem é conhecido por usar um 'gancho' em 'Street Fighter'?", options: ["Balrog","Sagat","M. Bison","Vega"], answer: "Balrog"},
+    {question: "Qual o nome do planeta natal de 'Halo'?", options: ["Reach","Earth","Installation 07","Covenant"], answer: "Reach"},
+    {question: "O que é um 'NPC' em jogos?", options: ["Non-Playable Character","New Player Character","Navegação Pessoal do Computador","Não Pode Conectar"], answer: "Non-Playable Character"}
   ],
   hard: [
-    {question: "Quem venceu a primeira Copa do Mundo de videogame (FIFA e similares)?", options: ["Brasil","EUA","Alemanha","Coreia do Sul"], answer: "Brasil"},
-    {question: "Qual é a mecânica principal de Dungeons & Dragons?", options: ["Role-playing","Corrida","Luta","Quebra-cabeça"], answer: "Role-playing"},
-    {question: "Em Magic: The Gathering, quantos pontos de vida um jogador inicia?", options: ["20","30","15","25"], answer: "20"}
+    {question: "Qual o ano de lançamento do primeiro 'The Legend of Zelda'?", options: ["1986","1987","1985","1988"], answer: "1986"},
+    {question: "Qual jogo introduziu o sistema de combate 'Active Time Battle' (ATB)?", options: ["Final Fantasy IV","Final Fantasy VII","Chrono Trigger","Dragon Quest"], answer: "Final Fantasy IV"},
+    {question: "Qual é o nome do vilão principal em 'Half-Life'?", options: ["G-Man","Dr. Breen","Nihilanth","Combine"], answer: "G-Man"},
+    {question: "Qual a resolução padrão do primeiro 'Doom'?", options: ["320x200","640x480","256x256","160x100"], answer: "320x200"},
+    {question: "Qual a empresa que criou o motor gráfico 'Unreal Engine'?", options: ["Epic Games","Unity Technologies","Valve Corporation","Crytek"], answer: "Epic Games"},
+    {question: "O que significa 'MMORPG'?", options: ["Massively Multiplayer Online Role-Playing Game","Multiplayer Massive Online Role-Playing Game","Mobile Multi-Online Role-Playing Game","Massive Multiplayer Open Role-Playing Game"], answer: "Massively Multiplayer Online Role-Playing Game"},
+    {question: "Qual o jogo é considerado o primeiro 'Survival Horror'?", options: ["Alone in the Dark","Resident Evil","Sweet Home","Silent Hill"], answer: "Sweet Home"},
+    {question: "Qual o nome do protagonista de 'BioShock'?", options: ["Jack","Booker DeWitt","Andrew Ryan","Atlas"], answer: "Jack"},
+    {question: "Qual o nome do criador de 'Pac-Man'?", options: ["Toru Iwatani","Shigeru Miyamoto","Hideo Kojima","Gunpei Yokoi"], answer: "Toru Iwatani"},
+    {question: "Qual é o nome do planeta em 'Star Fox'?", options: ["Corneria","Venom","Aquas","Sauria"], answer: "Corneria"}
   ]
+},
+enem: {
+    easy: [
+    {question: "Qual é o valor aproximado de π (pi)?", options: ["3,14","3,15","3,10","3,00"], answer: "3,14"},
+    {question: "Quem escreveu 'Dom Casmurro'?", options: ["Machado de Assis","José de Alencar","Graciliano Ramos","Carlos Drummond de Andrade"], answer: "Machado de Assis"},
+    {question: "Em que continente está localizado o Egito?", options: ["África","Ásia","Europa","América"], answer: "África"},
+    {question: "Qual é a unidade básica da vida?", options: ["Célula","Tecido","Órgão","Molécula"], answer: "Célula"},
+    {question: "Quem descobriu o Brasil?", options: ["Pedro Álvares Cabral","Cristóvão Colombo","Vasco da Gama","Fernão de Magalhães"], answer: "Pedro Álvares Cabral"},
+    {question: "Qual revolução marcou o início da Idade Moderna?", options: ["Queda de Constantinopla","Revolução Francesa","Independência dos EUA","Revolução Industrial"], answer: "Queda de Constantinopla"},
+    {question: "Qual o principal objetivo da tese em uma redação?", options: ["Apresentar o ponto de vista","Contar uma história","Explicar regras gramaticais","Listar fatos"], answer: "Apresentar o ponto de vista"},
+    {question: "Qual é o planeta mais próximo do Sol?", options: ["Mercúrio","Vênus","Terra","Marte"], answer: "Mercúrio"},
+    {question: "Qual órgão produz insulina?", options: ["Pâncreas","Fígado","Rim","Estômago"], answer: "Pâncreas"},
+    {question: "Qual é a função do coração?", options: ["Bombear sangue","Filtrar ar","Produzir hormônios","Armazenar energia"], answer: "Bombear sangue"}
+  ],
+    medium: [
+    {question: "Qual empresa criou 'Grand Theft Auto' (GTA)?", options: ["Rockstar Games","Ubisoft","EA Games","Activision"], answer: "Rockstar Games"},
+    {question: "Qual jogo popularizou o gênero MOBA?", options: ["League of Legends","Dota 2","StarCraft","World of Warcraft"], answer: "League of Legends"},
+    {question: "O que é um NPC em jogos?", options: ["Non-Playable Character","New Player Character","Navegação Pessoal do Computador","Não Pode Conectar"], answer: "Non-Playable Character"},
+    {question: "Qual é a função da fotossíntese nas plantas?", options: ["Produzir alimento usando luz","Respirar oxigênio","Reproduzir","Absorver nutrientes do solo"], answer: "Produzir alimento usando luz"},
+    {question: "O que ocorre na meiose?", options: ["Formação de gametas","Divisão de células somáticas","Produção de proteínas","Respiração celular"], answer: "Formação de gametas"},
+    {question: "Qual é a principal moeda de troca em 'Minecraft'?", options: ["Esmeralda","Ouro","Diamante","Ferro"], answer: "Esmeralda"},
+    {question: "Qual o nome do planeta natal de 'Halo'?", options: ["Reach","Earth","Installation 07","Covenant"], answer: "Reach"},
+    {question: "Qual é a fórmula química da glicose?", options: ["C6H12O6","H2O","CO2","C12H22O11"], answer: "C6H12O6"},
+    {question: "O que caracteriza uma reação exotérmica?", options: ["Libera calor","Absorve calor","Não há troca de energia","Produz apenas gás"], answer: "Libera calor"},
+    {question: "O que significa 'MMORPG'?", options: ["Massively Multiplayer Online Role-Playing Game","Multiplayer Massive Online Role-Playing Game","Mobile Multi-Online Role-Playing Game","Massive Multiplayer Open Role-Playing Game"], answer: "Massively Multiplayer Online Role-Playing Game"}
+  ],
+  hard: [
+    {question: "Qual o ano de lançamento do primeiro 'The Legend of Zelda'?", options: ["1986","1987","1985","1988"], answer: "1986"},
+    {question: "Qual jogo introduziu o sistema de combate 'Active Time Battle' (ATB)?", options: ["Final Fantasy IV","Final Fantasy VII","Chrono Trigger","Dragon Quest"], answer: "Final Fantasy IV"},
+    {question: "Qual o vilão principal em 'Half-Life'?", options: ["G-Man","Dr. Breen","Nihilanth","Combine"], answer: "G-Man"},
+    {question: "Qual jogo é considerado o primeiro 'Survival Horror'?", options: ["Alone in the Dark","Resident Evil","Sweet Home","Silent Hill"], answer: "Sweet Home"},
+    {question: "Qual o nome do protagonista de 'BioShock'?", options: ["Jack","Booker DeWitt","Andrew Ryan","Atlas"], answer: "Jack"},
+    {question: "Qual o nome do criador de 'Pac-Man'?", options: ["Toru Iwatani","Shigeru Miyamoto","Hideo Kojima","Gunpei Yokoi"], answer: "Toru Iwatani"},
+    {question: "Qual a resolução padrão do primeiro 'Doom'?", options: ["320x200","640x480","256x256","160x100"], answer: "320x200"},
+    {question: "Qual a primeira consola a usar cartuchos de jogo?", options: ["Magnavox Odyssey","Atari 2600","NES","Sega Master System"], answer: "Magnavox Odyssey"},
+    {question: "Em qual cidade fictícia se passa 'Cyberpunk 2077'?", options: ["Night City","Los Santos","Raccoon City","Midgar"], answer: "Night City"},
+    {question: "Qual o planeta em 'Star Fox'?", options: ["Corneria","Venom","Aquas","Sauria"], answer: "Corneria"}
+  ],
 }
 };

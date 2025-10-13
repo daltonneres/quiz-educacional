@@ -25,7 +25,7 @@ function selectLevel(level) {
 
 // --- Atualiza o ranking na tela inicial ---
 function updateRanking() {
-const themes = ["geral", "matematica", "ingles", "ciencias", "cultura", "esportes", "tecnologia", "portugues", "historia", "saude", "gastronomia", "jogos"];
+const themes = ["geral", "matematica", "ingles", "ciencias", "cultura", "esportes", "tecnologia", "portugues", "historia", "saude", "gastronomia", "jogos", "enem",];
 const playerName = localStorage.getItem("playerName") || "Jogador";
 
   themes.forEach(theme => {
