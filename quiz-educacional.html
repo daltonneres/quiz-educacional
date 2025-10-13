@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Educacional | Matérias</title>
+  <link rel="icon" href="img/favicon.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Quiz Educacional</h1>
+<div id="playerInfo" class="dropdown">
+  <img src="avatar.jpg" alt="Avatar" class="avatar-small" id="avatarImg">
+  <span id="playerNameHeader"></span>
+  <div class="dropdown-menu" id="playerMenu">
+    <button onclick="changeName()">🧑 Alterar nome</button>
+    <button onclick="document.getElementById('avatarUpload').click()">🖼️ Alterar imagem</button>
+    <button onclick="window.location.href='index.html'">🏠 Tela inicial</button>
+    <button onclick="window.open('https://wa.me/5546999711937', '_blank')">💬 Suporte</button>
+    <button onclick="window.location.href='quiz-educacional.html'">🧠 Quizzes Adicionais</button>
+    <button onclick="showAddQuizForm()">➕ Adicionar Quiz</button>
+    <button onclick="logout()">🚪 Sair</button>
+  </div>
+  <input type="file" id="avatarUpload" accept="image/*" style="display: none;">
+</div>
+  </header>
+
+<main>
+  <h2>Escolha a matéria</h2>
+  <div class="quizzes-container">
+    <div class="quiz-card" onclick="openSubject('matematica')">
+      <img src="img/matematica.jpg" alt="Matemática">
+      <h3>Matemática</h3>
+      <p>Resolva desafios sobre álgebra, geometria e porcentagem — do básico ao avançado.</p>
+    </div>
+
+    <div class="quiz-card" onclick="openSubject('portugues')">
+      <img src="img/portugues.jpg" alt="Português">
+      <h3>Português</h3>
+      <p>Explore questões de gramática, ortografia e interpretação de texto.</p>
+    </div>
+
+    <div class="quiz-card" onclick="openSubject('ciencias')">
+      <img src="img/ciencias.jpg" alt="Ciências">
+      <h3>Ciências</h3>
+      <p>Descubra curiosidades sobre biologia, química, física e o meio ambiente.</p>
+    </div>
+
+    <div class="quiz-card" onclick="openSubject('historia')">
+      <img src="img/historia.jpg" alt="História">
+      <h3>História</h3>
+      <p>Reviva fatos marcantes e períodos históricos que moldaram o mundo.</p>
+    </div>
+
+    <div class="quiz-card" onclick="openSubject('geografia')">
+      <img src="img/brasil.png" alt="Geografia">
+      <h3>Geografia</h3>
+      <p>Teste seus conhecimentos sobre países, capitais, estados e regiões brasileiras.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 Quiz Educacional. Todos os direitos reservados 📚.</p>
+  <p>Desenvolvido com carinho para nossos estudantes testarem seus conhecimentos 💙.</p>
+  <p>Desenvolvido por <strong>Dalton Neres</strong> - Desenvolvedor Full-Stack 👨🏻‍💻</p>
+</footer>
+
+  <script src="script.js"></script>
+  <script>
+    function openSubject(subject) {
+      localStorage.setItem("selectedSubject", subject);
+      window.location.href = "quiz-temas.html";
+    }
+  </script>
+</body>
+</html>

@@ -383,3 +383,188 @@ footer a {
 .modal-buttons #cancelAvatar:hover {
   background-color: #c0392b;
 }
+
+.quiz-dropdown {
+  position: relative;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.quiz-dropdown .submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  min-width: 200px;
+  z-index: 100;
+  padding: 5px 0;
+}
+
+.quiz-dropdown:hover .submenu {
+  display: block;
+}
+
+.submenu-item {
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.sub-submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  min-width: 180px;
+  padding: 5px 0;
+}
+
+.submenu-item:hover > .sub-submenu {
+  display: block;
+}
+
+.sub-submenu li {
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+/* === Correção do nome do jogador === */
+#playerNameHeader {
+  color: #fff;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+/* === Corrigir sobreposição e visibilidade dos submenus === */
+.dropdown-menu {
+  position: absolute;
+  z-index: 999; /* garante que fica sobre o resto do conteúdo */
+}
+
+/* Corrige a hierarquia dos submenus */
+.quiz-dropdown .submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  min-width: 200px;
+  z-index: 1000; /* mais alto que o menu principal */
+}
+
+/* Mostra o submenu ao passar o mouse */
+.quiz-dropdown:hover .submenu {
+  display: block;
+}
+
+/* Garante que sub-submenus também aparecem corretamente */
+.sub-submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  min-width: 180px;
+  z-index: 1001;
+}
+
+.submenu-item:hover > .sub-submenu {
+  display: block;
+}
+
+/* === Correção do nome do jogador === */
+#playerNameHeader {
+  color: #ffffff !important; /* força cor branca */
+  font-weight: 600;
+  margin-left: 8px;
+  z-index: 2000;
+  position: relative;
+}
+
+/* === Forçar visibilidade do menu dropdown === */
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  overflow: visible; /* importante */
+  z-index: 3000;
+  min-width: 220px;
+}
+
+.dropdown.active .dropdown-menu {
+  display: flex !important;
+}
+
+/* === Corrige o submenu dos quizzes === */
+.quiz-dropdown {
+  position: relative;
+  padding: 8px 12px;
+  color: #222;
+}
+
+.quiz-dropdown:hover .submenu {
+  display: block !important;
+}
+
+.quiz-dropdown .submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  min-width: 200px;
+  z-index: 4000;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.submenu-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #333;
+}
+
+.submenu-item:hover {
+  background-color: #f0f4f8;
+}
+
+.submenu-item:hover > .sub-submenu {
+  display: block !important;
+}
+
+.sub-submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  min-width: 180px;
+  z-index: 5000;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.theme-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}

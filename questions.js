@@ -496,6 +496,196 @@ jogos: {
     {question: "Qual é o nome do planeta em 'Star Fox'?", options: ["Corneria","Venom","Aquas","Sauria"], answer: "Corneria"}
   ]
 },
+quimica: {
+  easy: [
+    {question: "Qual é o símbolo químico da água?", options: ["H2O","CO2","O2","NaCl"], answer: "H2O"},
+    {question: "Qual gás respiramos principalmente?", options: ["Oxigênio","Nitrogênio","Hidrogênio","Dióxido de Carbono"], answer: "Oxigênio"},
+    {question: "Qual é o estado físico do gelo?", options: ["Sólido","Líquido","Gasoso","Plasma"], answer: "Sólido"},
+    {question: "Qual elemento tem o símbolo 'C'?", options: ["Carbono","Cálcio","Cloro","Cobalto"], answer: "Carbono"},
+    {question: "Qual é o ácido presente no suco de limão?", options: ["Ácido cítrico","Ácido sulfúrico","Ácido acético","Ácido láctico"], answer: "Ácido cítrico"},
+    {question: "Qual é a unidade básica da matéria?", options: ["Átomo","Molécula","Elétron","Neutrônio"], answer: "Átomo"},
+    {question: "Qual é o metal líquido à temperatura ambiente?", options: ["Mercúrio","Ouro","Ferro","Cobre"], answer: "Mercúrio"},
+    {question: "Qual é o símbolo químico do sódio?", options: ["Na","S","K","N"], answer: "Na"},
+    {question: "Qual substância é usada para matar microrganismos em ferimentos?", options: ["Álcool","Água","Glicerina","Óleo"], answer: "Álcool"},
+    {question: "Qual gás é liberado na combustão do carvão?", options: ["Dióxido de carbono","Oxigênio","Hidrogênio","Nitrogênio"], answer: "Dióxido de carbono"}
+  ],
+  medium: [
+    {question: "Qual é o número atômico do oxigênio?", options: ["8","6","16","12"], answer: "8"},
+    {question: "Qual é a fórmula do sal de cozinha?", options: ["NaCl","KCl","CaCO3","Na2SO4"], answer: "NaCl"},
+    {question: "Qual elemento é essencial para a formação de ossos?", options: ["Cálcio","Ferro","Potássio","Magnésio"], answer: "Cálcio"},
+    {question: "O que é uma reação endotérmica?", options: ["Absorve energia","Libera energia","Não envolve energia","Libera luz apenas"], answer: "Absorve energia"},
+    {question: "Qual é o gás liberado nas erupções vulcânicas?", options: ["Dióxido de enxofre","Oxigênio","Hélio","Nitrogênio"], answer: "Dióxido de enxofre"},
+    {question: "Qual é a massa atômica do carbono?", options: ["12","14","16","10"], answer: "12"},
+    {question: "Qual é o pH de uma solução neutra?", options: ["7","0","14","5"], answer: "7"},
+    {question: "Qual é a principal função dos catalisadores?", options: ["Acelerar reações químicas","Aumentar a temperatura","Mudar cor","Reagir com o produto"], answer: "Acelerar reações químicas"},
+    {question: "Qual é o gás liberado quando o bicarbonato de sódio reage com vinagre?", options: ["Dióxido de carbono","Oxigênio","Hidrogênio","Nitrogênio"], answer: "Dióxido de carbono"},
+    {question: "Qual é a fórmula da água oxigenada?", options: ["H2O2","H2O","HO","O2"], answer: "H2O2"}
+  ],
+  hard: [
+    {question: "Qual é o grupo da tabela periódica do cloro?", options: ["Halogênios","Gases nobres","Alcalinos","Calcogênios"], answer: "Halogênios"},
+    {question: "Qual é a massa molar do CO2?", options: ["44 g/mol","28 g/mol","32 g/mol","16 g/mol"], answer: "44 g/mol"},
+    {question: "O que é uma ligação iônica?", options: ["Transferência de elétrons","Compartilhamento de elétrons","Ausência de elétrons","Ligação metálica"], answer: "Transferência de elétrons"},
+    {question: "Qual é o elemento mais abundante na crosta terrestre?", options: ["Oxigênio","Ferro","Silício","Alumínio"], answer: "Oxigênio"},
+    {question: "Qual ácido está presente no estômago humano?", options: ["Ácido clorídrico","Ácido sulfúrico","Ácido cítrico","Ácido nítrico"], answer: "Ácido clorídrico"},
+    {question: "Qual é o nome do modelo que representa a distribuição eletrônica dos átomos?", options: ["Modelo de Bohr","Modelo de Dalton","Modelo de Rutherford","Modelo de Thomson"], answer: "Modelo de Bohr"},
+    {question: "Qual é o gás utilizado em lâmpadas fluorescentes?", options: ["Mercúrio","Neônio","Argônio","Hélio"], answer: "Mercúrio"},
+    {question: "O que caracteriza um composto orgânico?", options: ["Presença de carbono","Ausência de hidrogênio","Presença de oxigênio","Ausência de nitrogênio"], answer: "Presença de carbono"},
+    {question: "Qual é o íon presente no sal de cozinha?", options: ["Na+ e Cl-","K+ e Cl-","Ca2+ e CO32-","Mg2+ e SO42-"], answer: "Na+ e Cl-"},
+    {question: "O que é uma reação de oxidação?", options: ["Perda de elétrons","Ganho de elétrons","Liberação de calor","Formação de água"], answer: "Perda de elétrons"}
+  ]
+},
+biologia: {
+  easy: [
+    {question: "Qual é a unidade básica da vida?", options: ["Célula","Tecido","Órgão","Sistema"], answer: "Célula"},
+    {question: "Qual órgão produz insulina?", options: ["Pâncreas","Fígado","Rim","Estômago"], answer: "Pâncreas"},
+    {question: "Qual é o processo pelo qual as plantas produzem alimento?", options: ["Fotossíntese","Respiração","Fermentação","Transpiração"], answer: "Fotossíntese"},
+    {question: "Qual é o principal órgão do sistema circulatório?", options: ["Coração","Pulmão","Fígado","Rim"], answer: "Coração"},
+    {question: "Qual vitamina é importante para a saúde dos ossos?", options: ["Vitamina D","Vitamina C","Vitamina A","Vitamina K"], answer: "Vitamina D"},
+    {question: "Qual é o órgão responsável pela digestão dos alimentos?", options: ["Estômago","Cérebro","Coração","Rim"], answer: "Estômago"},
+    {question: "Qual célula transporta oxigênio no corpo?", options: ["Glóbulo vermelho","Neurônio","Plaqueta","Linfócito"], answer: "Glóbulo vermelho"},
+    {question: "Qual é o hábito saudável que ajuda a prevenir doenças?", options: ["Lavar as mãos","Ficar acordado até tarde","Evitar exercícios","Comer apenas doces"], answer: "Lavar as mãos"},
+    {question: "Qual nutriente é principal fonte de energia?", options: ["Carboidrato","Proteína","Vitamina","Água"], answer: "Carboidrato"},
+    {question: "Qual parte do corpo filtra o sangue?", options: ["Rim","Fígado","Coração","Pulmão"], answer: "Rim"}
+  ],
+  medium: [
+    {question: "Qual é a função dos glóbulos brancos?", options: ["Defender o corpo contra doenças","Transportar oxigênio","Coagular sangue","Produzir hormônios"], answer: "Defender o corpo contra doenças"},
+    {question: "Qual sistema é responsável pelo transporte de nutrientes pelo corpo?", options: ["Sistema circulatório","Sistema nervoso","Sistema respiratório","Sistema digestório"], answer: "Sistema circulatório"},
+    {question: "Qual mineral é essencial para a formação dos ossos?", options: ["Cálcio","Ferro","Potássio","Sódio"], answer: "Cálcio"},
+    {question: "Qual é o órgão do sistema respiratório responsável pelas trocas gasosas?", options: ["Pulmão","Traqueia","Faringe","Laringe"], answer: "Pulmão"},
+    {question: "O que significa a sigla AIDS?", options: ["Síndrome da Imunodeficiência Adquirida","Síndrome de Inflamação Aguda","Doença Autoimune","Infecção Viral"], answer: "Síndrome da Imunodeficiência Adquirida"},
+    {question: "Qual é o nome do hormônio responsável pelo crescimento?", options: ["Hormônio do crescimento","Insulina","Adrenalina","Tiroxina"], answer: "Hormônio do crescimento"},
+    {question: "Qual tipo de tecido conecta músculos aos ossos?", options: ["Tendão","Cartilagem","Ligamento","Epitélio"], answer: "Tendão"},
+    {question: "Qual é a função do fígado?", options: ["Desintoxicar o corpo","Bombear sangue","Produzir células sanguíneas","Regular a temperatura"], answer: "Desintoxicar o corpo"},
+    {question: "Qual é a principal função dos rins?", options: ["Filtrar o sangue e eliminar resíduos","Produzir enzimas digestivas","Armazenar nutrientes","Controlar hormônios"], answer: "Filtrar o sangue e eliminar resíduos"},
+    {question: "Qual é a função das plaquetas?", options: ["Coagular o sangue","Transportar oxigênio","Defender o corpo","Produzir hormônios"], answer: "Coagular o sangue"}
+  ],
+  hard: [
+    {question: "Qual é a sequência correta do sistema digestório?", options: ["Boca, esôfago, estômago, intestino delgado, intestino grosso","Esôfago, boca, intestino grosso, estômago, intestino delgado","Boca, estômago, intestino grosso, intestino delgado, esôfago","Intestino delgado, boca, estômago, intestino grosso, esôfago"], answer: "Boca, esôfago, estômago, intestino delgado, intestino grosso"},
+    {question: "Qual a principal função dos alvéolos pulmonares?", options: ["Troca de gases entre sangue e ar","Filtrar toxinas","Produzir muco","Controlar a respiração"], answer: "Troca de gases entre sangue e ar"},
+    {question: "Qual vitamina é importante para a coagulação do sangue?", options: ["Vitamina K","Vitamina D","Vitamina C","Vitamina B12"], answer: "Vitamina K"},
+    {question: "Qual parte do cérebro é responsável pela memória?", options: ["Hipocampo","Cerebelo","Bulbo","Tálamo"], answer: "Hipocampo"},
+    {question: "Qual hormônio é produzido pela glândula tireoide?", options: ["Tiroxina","Insulina","Adrenalina","Cortisol"], answer: "Tiroxina"},
+    {question: "O que é homeostase?", options: ["Equilíbrio do ambiente interno do corpo","Processo de digestão","Transporte de oxigênio","Coagulação do sangue"], answer: "Equilíbrio do ambiente interno do corpo"},
+    {question: "Qual é a principal função do sistema linfático?", options: ["Defesa do organismo contra infecções","Produzir hormônios","Transportar oxigênio","Regular a pressão arterial"], answer: "Defesa do organismo contra infecções"},
+    {question: "Qual é a função da insulina?", options: ["Reduzir a glicose no sangue","Aumentar a pressão arterial","Produzir proteínas","Estimular crescimento"], answer: "Reduzir a glicose no sangue"},
+    {question: "Qual vitamina previne o escorbuto?", options: ["Vitamina C","Vitamina D","Vitamina A","Vitamina B12"], answer: "Vitamina C"},
+    {question: "O que caracteriza uma dieta balanceada?", options: ["Inclui carboidratos, proteínas, gorduras, vitaminas e minerais","Só inclui proteínas","Inclui apenas vegetais","Só inclui carboidratos"], answer: "Inclui carboidratos, proteínas, gorduras, vitaminas e minerais"}
+  ]
+},
+brasil: {
+  easy: [
+    {question: "Qual é a capital do Brasil?", options: ["Brasília","São Paulo","Rio de Janeiro","Salvador"], answer: "Brasília"},
+    {question: "Qual estado brasileiro tem Salvador como capital?", options: ["Bahia","Pernambuco","Ceará","Rio Grande do Norte"], answer: "Bahia"},
+    {question: "Qual é a capital de São Paulo?", options: ["São Paulo","Campinas","Ribeirão Preto","Santos"], answer: "São Paulo"},
+    {question: "Qual é a capital do Rio de Janeiro?", options: ["Rio de Janeiro","Niterói","Petrópolis","Angra dos Reis"], answer: "Rio de Janeiro"},
+    {question: "Qual é a capital do Paraná?", options: ["Curitiba","Londrina","Maringá","Foz do Iguaçu"], answer: "Curitiba"},
+    {question: "Qual estado tem Fortaleza como capital?", options: ["Ceará","Piauí","Rio Grande do Norte","Paraíba"], answer: "Ceará"},
+    {question: "Qual é a capital de Minas Gerais?", options: ["Belo Horizonte","Uberlândia","Ouro Preto","Juiz de Fora"], answer: "Belo Horizonte"},
+    {question: "Qual estado tem a cidade de Manaus?", options: ["Amazonas","Pará","Roraima","Acre"], answer: "Amazonas"},
+    {question: "Qual é a capital do Rio Grande do Sul?", options: ["Porto Alegre","Caxias do Sul","Pelotas","Santa Maria"], answer: "Porto Alegre"},
+    {question: "Qual estado tem Goiânia como capital?", options: ["Goiás","Mato Grosso","Mato Grosso do Sul","Minas Gerais"], answer: "Goiás"}
+  ],
+  medium: [
+    {question: "Qual é a capital de Pernambuco?", options: ["Recife","Olinda","Caruaru","Jaboatão dos Guararapes"], answer: "Recife"},
+    {question: "Qual estado tem a cidade de Florianópolis?", options: ["Santa Catarina","Paraná","Rio Grande do Sul","Espírito Santo"], answer: "Santa Catarina"},
+    {question: "Qual é a capital do Amazonas?", options: ["Manaus","Parintins","Coari","Itacoatiara"], answer: "Manaus"},
+    {question: "Qual estado tem Cuiabá como capital?", options: ["Mato Grosso","Mato Grosso do Sul","Goiás","Rondônia"], answer: "Mato Grosso"},
+    {question: "Qual é a capital do Espírito Santo?", options: ["Vitória","Vila Velha","Guarapari","Cariacica"], answer: "Vitória"},
+    {question: "Qual estado tem Natal como capital?", options: ["Rio Grande do Norte","Ceará","Paraíba","Pernambuco"], answer: "Rio Grande do Norte"},
+    {question: "Qual é a capital de Alagoas?", options: ["Maceió","Arapiraca","Palmeira dos Índios","Penedo"], answer: "Maceió"},
+    {question: "Qual estado tem a cidade de Porto Velho?", options: ["Rondônia","Roraima","Acre","Amapá"], answer: "Rondônia"},
+    {question: "Qual é a capital do Maranhão?", options: ["São Luís","Imperatriz","Caxias","Bacabal"], answer: "São Luís"},
+    {question: "Qual estado tem Teresina como capital?", options: ["Piauí","Ceará","Maranhão","Bahia"], answer: "Piauí"}
+  ],
+  hard: [
+    {question: "Qual é a capital de Roraima?", options: ["Boa Vista","Manaus","Macapá","Porto Velho"], answer: "Boa Vista"},
+    {question: "Qual estado tem a cidade de Joinville?", options: ["Santa Catarina","Paraná","Rio Grande do Sul","São Paulo"], answer: "Santa Catarina"},
+    {question: "Qual é a capital do Acre?", options: ["Rio Branco","Cruzeiro do Sul","Sena Madureira","Tarauacá"], answer: "Rio Branco"},
+    {question: "Qual estado tem a cidade de Foz do Iguaçu?", options: ["Paraná","Santa Catarina","São Paulo","Mato Grosso do Sul"], answer: "Paraná"},
+    {question: "Qual é a capital do Tocantins?", options: ["Palmas","Gurupi","Araguaína","Porto Nacional"], answer: "Palmas"},
+    {question: "Qual estado tem a cidade de Maringá?", options: ["Paraná","São Paulo","Santa Catarina","Minas Gerais"], answer: "Paraná"},
+    {question: "Qual é a capital de Sergipe?", options: ["Aracaju","Nossa Senhora do Socorro","Lagarto","Itabaiana"], answer: "Aracaju"},
+    {question: "Qual estado tem a cidade de Campina Grande?", options: ["Paraíba","Pernambuco","Ceará","Rio Grande do Norte"], answer: "Paraíba"},
+    {question: "Qual é a capital do Pará?", options: ["Belém","Santarém","Marabá","Ananindeua"], answer: "Belém"},
+    {question: "Qual estado tem a cidade de Itajaí?", options: ["Santa Catarina","Paraná","São Paulo","Rio Grande do Sul"], answer: "Santa Catarina"}
+  ]
+},
+paises: {
+  easy: [
+    {question: "Qual é a capital da França?", options: ["Paris","Londres","Madri","Berlim"], answer: "Paris"},
+    {question: "Qual país tem a bandeira com círculos vermelhos no fundo branco?", options: ["Japão","China","Coreia do Sul","Turquia"], answer: "Japão"},
+    {question: "Qual é o continente onde fica o Egito?", options: ["África","Ásia","Europa","América"], answer: "África"},
+    {question: "Qual país é conhecido como a Terra do Sol Nascente?", options: ["Japão","China","Índia","Tailândia"], answer: "Japão"},
+    {question: "Qual é a língua oficial do Brasil?", options: ["Português","Espanhol","Inglês","Francês"], answer: "Português"},
+    {question: "Qual país tem o maior território do mundo?", options: ["Rússia","Canadá","China","Estados Unidos"], answer: "Rússia"},
+    {question: "Qual é a moeda oficial dos Estados Unidos?", options: ["Dólar","Euro","Libra","Iene"], answer: "Dólar"},
+    {question: "Qual país é famoso por suas tulipas e moinhos de vento?", options: ["Países Baixos","Alemanha","Bélgica","Suíça"], answer: "Países Baixos"},
+    {question: "Qual é a capital da Itália?", options: ["Roma","Milão","Veneza","Florença"], answer: "Roma"},
+    {question: "Qual país tem a maior população do mundo?", options: ["China","Índia","Estados Unidos","Indonésia"], answer: "China"}
+  ],
+  medium: [
+    {question: "Qual é a capital da Austrália?", options: ["Camberra","Sydney","Melbourne","Brisbane"], answer: "Camberra"},
+    {question: "Qual país é conhecido pelos seus canais e gôndolas?", options: ["Itália","Holanda","Espanha","França"], answer: "Itália"},
+    {question: "Qual país tem o maior número de ilhas?", options: ["Suécia","Indonésia","Filipinas","Noruega"], answer: "Suécia"},
+    {question: "Qual é a capital do Canadá?", options: ["Ottawa","Toronto","Vancouver","Montreal"], answer: "Ottawa"},
+    {question: "Qual país é famoso por seu deserto de Gobi?", options: ["China","Mongólia","Índia","Paquistão"], answer: "China"},
+    {question: "Qual país tem a maior economia da Europa?", options: ["Alemanha","França","Reino Unido","Itália"], answer: "Alemanha"},
+    {question: "Qual é a capital da Argentina?", options: ["Buenos Aires","Córdoba","Rosário","Mendoza"], answer: "Buenos Aires"},
+    {question: "Qual país tem a bandeira com uma folha de bordo?", options: ["Canadá","Estados Unidos","Reino Unido","Austrália"], answer: "Canadá"},
+    {question: "Qual país africano tem o maior território?", options: ["Argélia","Sudão","Líbia","Níger"], answer: "Argélia"},
+    {question: "Qual é a capital da Turquia?", options: ["Ancara","Istambul","Bursa","Esmirna"], answer: "Ancara"}
+  ],
+  hard: [
+    {question: "Qual país possui a cidade mais populosa da África?", options: ["Nigéria","Egito","África do Sul","Quênia"], answer: "Nigéria"},
+    {question: "Qual país tem como idioma oficial o sueco?", options: ["Suécia","Noruega","Finlândia","Dinamarca"], answer: "Suécia"},
+    {question: "Qual é a capital da Nova Zelândia?", options: ["Wellington","Auckland","Christchurch","Hamilton"], answer: "Wellington"},
+    {question: "Qual país é conhecido como 'Terra dos Incas'?", options: ["Peru","Chile","Bolívia","Equador"], answer: "Peru"},
+    {question: "Qual país europeu possui dois idiomas oficiais, francês e holandês?", options: ["Bélgica","Suíça","Luxemburgo","Países Baixos"], answer: "Bélgica"},
+    {question: "Qual país possui o maior número de vulcões ativos?", options: ["Indonésia","Japão","Itália","México"], answer: "Indonésia"},
+    {question: "Qual país africano tem o maior número de línguas oficiais?", options: ["África do Sul","Nigéria","Etiópia","Camarões"], answer: "África do Sul"},
+    {question: "Qual país tem a maior reserva de petróleo do mundo?", options: ["Venezuela","Arábia Saudita","Canadá","Irã"], answer: "Venezuela"},
+    {question: "Qual país europeu tem a capital mais alta em altitude?", options: ["Andorra","Suíça","Áustria","Liechtenstein"], answer: "Andorra"},
+    {question: "Qual país asiático é formado por mais de 7.000 ilhas?", options: ["Filipinas","Indonésia","Japão","Malásia"], answer: "Filipinas"}
+  ]
+},
+marcas: {
+  easy: [
+    {question: "Qual é o logotipo da Apple?", options: ["Maçã mordida","Banana","Cereja","Pera"], answer: "Maçã mordida"},
+    {question: "Qual marca tem o símbolo de uma 'swoosh'?", options: ["Nike","Adidas","Puma","Reebok"], answer: "Nike"},
+    {question: "Qual marca é famosa pelo seu 'M' dourado?", options: ["McDonald's","Burger King","KFC","Subway"], answer: "McDonald's"},
+    {question: "Qual cor é associada à Coca-Cola?", options: ["Vermelho","Azul","Verde","Amarelo"], answer: "Vermelho"},
+    {question: "Qual marca tem um coelho como mascote em alguns produtos?", options: ["Energizer","Duracell","Nestlé","Pepsi"], answer: "Energizer"},
+    {question: "Qual logotipo tem quatro anéis entrelaçados?", options: ["Audi","BMW","Toyota","Mercedes"], answer: "Audi"},
+    {question: "Qual marca é famosa pelo seu ursinho de pelúcia colorido?", options: ["Haribo","Lindt","Nestlé","Ferrero"], answer: "Haribo"},
+    {question: "Qual é a marca do famoso tênis com três listras?", options: ["Adidas","Nike","Puma","Reebok"], answer: "Adidas"},
+    {question: "Qual logotipo é uma maçã mordida?", options: ["Apple","Microsoft","Google","Samsung"], answer: "Apple"},
+    {question: "Qual empresa tem o logotipo de uma concha?", options: ["Shell","Exxon","BP","Chevron"], answer: "Shell"}
+  ],
+  medium: [
+    {question: "Qual marca de carros tem um cavalo empinado no logotipo?", options: ["Ferrari","Porsche","Lamborghini","Maserati"], answer: "Ferrari"},
+    {question: "Qual marca tem um pássaro azul como logotipo?", options: ["Twitter","Facebook","LinkedIn","Instagram"], answer: "Twitter"},
+    {question: "Qual marca de chocolates usa o símbolo de um ursinho dourado?", options: ["Toblerone","Haribo","Nestlé","Lindt"], answer: "Haribo"},
+    {question: "Qual é a marca de fast food com um logotipo de coroa?", options: ["Burger King","Wendy's","KFC","Pizza Hut"], answer: "Burger King"},
+    {question: "Qual empresa de tecnologia tem um logotipo com quatro quadrados coloridos?", options: ["Microsoft","Google","IBM","Intel"], answer: "Microsoft"},
+    {question: "Qual marca de carros tem uma estrela de três pontas como logotipo?", options: ["Mercedes-Benz","BMW","Audi","Volvo"], answer: "Mercedes-Benz"},
+    {question: "Qual marca tem um logotipo de uma abelha?", options: ["Bumble Bee","Lipton","Beech-Nut","Honeywell"], answer: "Bumble Bee"},
+    {question: "Qual empresa de bebidas tem uma coroa como logotipo em sua cerveja mais famosa?", options: ["Corona","Heineken","Budweiser","Stella Artois"], answer: "Corona"},
+    {question: "Qual marca famosa tem um logotipo verde com uma sereia?", options: ["Starbucks","Dunkin' Donuts","Costa Coffee","Peet's Coffee"], answer: "Starbucks"},
+    {question: "Qual marca tem uma bola de futebol estilizada como parte do logotipo?", options: ["Puma","Adidas","Nike","Reebok"], answer: "Adidas"}
+  ],
+  hard: [
+    {question: "Qual é a cor principal do logotipo da Ferrari?", options: ["Amarelo","Vermelho","Preto","Branco"], answer: "Amarelo"},
+    {question: "Qual empresa tem um logotipo com uma tartaruga como símbolo?", options: ["Tortuga","Turtle Wax","Reptile Inc","Shell"], answer: "Turtle Wax"},
+    {question: "Qual marca de carros tem um logotipo com uma serpente e uma cruz?", options: ["Alfa Romeo","Maserati","Ferrari","Lancia"], answer: "Alfa Romeo"},
+    {question: "Qual empresa tem um logotipo com a letra 'M' estilizada como uma montanha?", options: ["McLaren","Monster","Marmot","Mountain Dew"], answer: "McLaren"},
+    {question: "Qual logotipo de tecnologia é composto por um 'ponto' vermelho sobre um círculo?", options: ["Pinterest","Reddit","Dribbble","YouTube"], answer: "Pinterest"},
+    {question: "Qual marca de carros tem um logotipo com uma lâmpada estilizada?", options: ["Opel","Renault","Ford","Peugeot"], answer: "Opel"},
+    {question: "Qual empresa de bebidas tem um logotipo com um touro vermelho?", options: ["Red Bull","Monster","Rockstar","Burn"], answer: "Red Bull"},
+    {question: "Qual marca de moda tem um logotipo de uma cabeça de cavalo?", options: ["Hermès","Ralph Lauren","Gucci","Burberry"], answer: "Hermès"},
+    {question: "Qual logotipo famoso tem um triângulo invertido com uma letra 'A'?", options: ["Adobe","Delta","Acer","Avon"], answer: "Adobe"},
+    {question: "Qual marca de pneus usa um homem alado no logotipo?", options: ["Michelin","Goodyear","Pirelli","Bridgestone"], answer: "Goodyear"}
+  ]
+},
 enem: {
     easy: [
     {question: "Qual é o valor aproximado de π (pi)?", options: ["3,14","3,15","3,10","3,00"], answer: "3,14"},

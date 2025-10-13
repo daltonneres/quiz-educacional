@@ -18,6 +18,7 @@
     <button onclick="document.getElementById('avatarUpload').click()">🖼️ Alterar imagem</button>
     <button onclick="window.location.href='index.html'">🏠 Tela inicial</button>
     <button onclick="window.open('https://wa.me/5546999711937', '_blank')">💬 Suporte</button>
+    <button onclick="window.location.href='quiz-educacional.html'">🧠 Quizzes Adicionais</button>
     <button onclick="showAddQuizForm()">➕ Adicionar Quiz</button>
     <button onclick="logout()">🚪 Sair</button>
   </div>
@@ -154,10 +155,24 @@
       <button onclick="selectQuiz('saude')">Escolher</button>
     </div>
 
+    <div class="quiz-card" data-theme="biologia">
+      <img src="img/biologia.jpg" alt="Biologia" title="Biologia">
+      <h3>Biologia</h3>
+      <p>Perguntas sobre o corpo humano, nutrição, anatomia, primeiros socorros e hábitos saudáveis do dia a dia.</p>
+      <button onclick="selectQuiz('biologia')">Escolher</button>
+    </div>
+
+    <div class="quiz-card" data-theme="quimica">
+      <img src="img/quimica.jpg" alt="Quimica" title="Quimica">
+      <h3>Quimica</h3>
+      <p>Perguntas sobre nutrição, corpo humano, primeiros socorros, anatomia básica e hábitos saudáveis.</p>
+      <button onclick="selectQuiz('quimica')">Escolher</button>
+    </div>
+
     <div class="quiz-card" data-theme="portugues">
       <img src="img/portugues.jpg" alt="Língua Portuguesa" title="Língua Portuguesa">
       <h3>Língua Portuguesa</h3>
-      <p>Ortografia, concordância, regência, figuras de linguagem e interpretação de texto.</p>
+      <p>Perguntas sobre elementos, compostos, reações químicas, propriedades de substâncias e química no cotidiano.</p>
       <button onclick="selectQuiz('portugues')">Escolher</button>
     </div>
 
@@ -167,6 +182,13 @@
       <p>De video games clássicos a animes atuais e tendências da internet: teste sua cultura digital.</p>
       <button onclick="selectQuiz('jogos')">Escolher</button>
     </div>
+
+<div class="quiz-card" data-theme="marcas">
+  <img src="img/marcas.jpg" alt="Marcas e Logotipos" title="Marcas e Logotipos">
+  <h3>Marcas e Logotipos</h3>
+  <p>Perguntas sobre identidade visual, reconhecimento de marcas famosas, cores, símbolos e história de logotipos.</p>
+  <button onclick="selectQuiz('marcas')">Escolher</button>
+</div>
 
     <div class="quiz-card" data-theme="gastronomia">
       <img src="img/comida.jpg" alt="Gastronomia" title="Gastronomia">
@@ -181,6 +203,20 @@
       <p>Teste seus conhecimentos com perguntas baseadas nas provas do ENEM.</p>
       <button onclick="selectQuiz('enem')">Escolher</button>
     </div>
+
+    <div class="quiz-card" data-theme="paises">
+  <img src="img/paises.jpg" alt="Países do Mundo" title="Países do Mundo">
+  <h3>Países do Mundo</h3>
+  <p>Perguntas sobre capitais, bandeiras, população, cultura e curiosidades de diferentes países.</p>
+  <button onclick="selectQuiz('paises')">Escolher</button>
+</div>
+
+<div class="quiz-card" data-theme="brasil">
+  <img src="img/brasil.png" alt="Estados e Cidades do Brasil" title="Estados e Cidades do Brasil">
+  <h3>Estados e Cidades do Brasil</h3>
+  <p>Perguntas sobre capitais, regiões, bandeiras e curiosidades dos estados e cidades brasileiras.</p>
+  <button onclick="selectQuiz('brasil')">Escolher</button>
+</div>
   </div>
 
   <section id="ranking">
@@ -199,6 +235,11 @@
       <div class="ranking-theme" id="ranking-jogos"></div>
       <div class="ranking-theme" id="ranking-gastronomia"></div>
       <div class="ranking-theme" id="ranking-enem"></div>
+      <div class="ranking-theme" id="ranking-quimica"></div>
+      <div class="ranking-theme" id="ranking-biologia"></div>
+      <div class="ranking-theme" id="ranking-marcas"></div>
+      <div class="ranking-theme" id="ranking-paises"></div>
+      <div class="ranking-theme" id="ranking-brasil"></div>
     </div>
   </section>
 </main>

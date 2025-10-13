@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Educacional | Temas</title>
+<link rel="icon" href="img/favicon.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Quiz Educacional</h1>
+<div id="playerInfo" class="dropdown">
+  <img src="avatar.jpg" alt="Avatar" class="avatar-small" id="avatarImg">
+  <span id="playerNameHeader"></span>
+  <div class="dropdown-menu" id="playerMenu">
+    <button onclick="changeName()">🧑 Alterar nome</button>
+    <button onclick="document.getElementById('avatarUpload').click()">🖼️ Alterar imagem</button>
+    <button onclick="window.location.href='index.html'">🏠 Tela inicial</button>
+    <button onclick="window.open('https://wa.me/5546999711937', '_blank')">💬 Suporte</button>
+    <button onclick="showAddQuizForm()">➕ Adicionar Quiz</button>
+    <button onclick="window.location.href='quiz-educacional.html'">🧠 Quizzes Adicionais</button>
+    <button onclick="logout()">🚪 Sair</button>
+  </div>
+  <input type="file" id="avatarUpload" accept="image/*" style="display: none;">
+</div>
+  </header>
+
+  <main>
+    <h2 id="subjectTitle">Temas da Matéria</h2>
+    <div class="quizzes-container" id="themesContainer"></div>
+  </main>
+
+<footer>
+  <p>© 2025 Quiz Educacional. Todos os direitos reservados 📚.</p>
+  <p>Desenvolvido com carinho para nossos estudantes testarem seus conhecimentos 💙.</p>
+  <p>Desenvolvido por <strong>Dalton Neres</strong> - Desenvolvedor Full-Stack 👨🏻‍💻</p>
+</footer>
+
+  <script src="script.js"></script>
+<script>
+  const subject = localStorage.getItem("selectedSubject");
+  const themesContainer = document.getElementById("themesContainer");
+  const title = document.getElementById("subjectTitle");
+
+  const themes = {
+    matematica: ["Geometria", "Álgebra", "Porcentagem"],
+    portugues: ["Gramática", "Interpretação de Texto"],
+    ciencias: ["Biologia", "Física", "Química"],
+    historia: ["Antiga", "Moderna", "Contemporânea"],
+    geografia: ["Brasil", "Países", "Capitais"]
+  };
+
+  if (subject && themes[subject]) {
+    title.textContent = "Temas de " + subject.charAt(0).toUpperCase() + subject.slice(1);
+
+    const svgIcons = {
+      "matematica-geometria": "📐",
+      "matematica-algebra": "🧮",
+      "matematica-porcentagem": "💹",
+      "portugues-gramatica": "✍️",
+      "portugues-interpretacao de texto": "📖",
+      "ciencias-biologia": "🧬",
+      "ciencias-quimica": "⚗️",
+      "ciencias-fisica": "🔭",
+      "historia-antiga": "🏺",
+      "historia-moderna": "🕰️",
+      "historia-contemporanea": "📚",
+      "geografia-brasil": "🗺️",
+      "geografia-paises": "🌍",
+      "geografia-capitais": "🏙️"
+    };
+
+    themes[subject].forEach(theme => {
+      const key = `${subject}-${theme.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`;
+      const icon = svgIcons[key] || "❓";
+      
+      const div = document.createElement("div");
+      div.className = "quiz-card";
+      div.innerHTML = `
+        <div class="theme-icon">${icon}</div>
+        <h3>${theme}</h3>
+        <button onclick="selectQuiz('${key}')">Escolher</button>
+      `;
+      themesContainer.appendChild(div);
+    });
+
+  } else {
+    title.textContent = "Nenhum tema encontrado.";
+  }
+</script>
+</body>
+</html>

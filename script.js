@@ -25,7 +25,7 @@ function selectLevel(level) {
 
 // --- Atualiza o ranking na tela inicial ---
 function updateRanking() {
-const themes = ["geral", "matematica", "ingles", "ciencias", "cultura", "esportes", "tecnologia", "portugues", "historia", "saude", "gastronomia", "jogos", "enem",];
+const themes = ["geral", "matematica", "ingles", "ciencias", "cultura", "esportes", "tecnologia", "portugues", "historia", "saude", "gastronomia", "jogos", "enem", "quimica", "biologia", "marcas", "brasil", "paises"];
 const playerName = localStorage.getItem("playerName") || "Jogador";
 
   themes.forEach(theme => {
@@ -228,3 +228,19 @@ function logout() {
     window.location.href = "index.html";
   }
 }
+
+// Detecta toque em dispositivos móveis para abrir submenu
+document.querySelectorAll('.menu-item').forEach(item => {
+  item.addEventListener('click', function(e) {
+    const submenu = this.querySelector('.submenu');
+    if(submenu) {
+      e.stopPropagation();
+      submenu.style.display = (submenu.style.display === 'block') ? 'none' : 'block';
+    }
+  });
+});
+
+// Fecha todos os submenus ao clicar fora
+window.addEventListener('click', () => {
+  document.querySelectorAll('.submenu').forEach(sub => sub.style.display = 'none');
+});
